@@ -42,8 +42,16 @@
             }
             .header {
                 padding-bottom: 15px;
+		        height: 100%;
+		        length: auto;
+		        breadth: auto;
                 text-align: center;
             }
+						.header img {
+     						width: 100%;
+     						max-width: 100%
+     						height: 100%;
+    				}
             .header span {
                 /*font-size: 22px;*/
             }
@@ -187,11 +195,11 @@
                 background-color: #DDDDDD;
             }
 
-            
+
                 body {
                     background-image: url(http://static.tinyletter.com/hptn/430c0144-61f2-4e33-a043-dc2d869de91f.jpg);
                 }
-            
+
 
             h1.title {
                 font-size: 36px;
@@ -210,6 +218,14 @@
             .fake-label {
                 font-family: Georgia, Times New Roman, Times, serif;
                 color: #111111;
+		text-align: center;
+            }
+  		.instructions,
+            label,
+            .fake-label {
+                font-family: Georgia, Times New Roman, Times, serif;
+                color: #111111;
+		text-align: center;
             }
             .button {
                 font-family: Helvetica, Arial, sans-serif;
@@ -387,34 +403,38 @@
                 <div class="header">
                     <img src="image_logo.jpg">
 		<br>
-                    <span class="byline">    by <a class="tl_twitter_handle" href="https://twitter.com/yoursyashk">yash Kulkarni</a> </span>
                 </div>
                 <div class="description"> Hand Picked Tech Newsletter will provide you with Knowledgable news related to Programming and Tech every Weekend so that you remain updated. :)  </div>
-                <div class="view-messages"> 
-                    
-                 </div> 
-                
-                
+		 <br> <div class="instructions"> So How to Start? <br>
+							Step 1. Enter your Email-ID in the field below <br>
+							Step 2. Open Your Email Account <br>
+							Step 3. Confirm your subscription by clicking on the link in the confirmation email <br>
+							BOOM, You are DONE...!!!   </div>
+                <div class="view-messages">
 
-                 <form id="subscribe-form" method="post" action="https://tinyletter.com/hptn"> 
-	                
+                 </div>
 
-	                
-	                    
+
+
+                 <form id="subscribe-form" method="post" action="https://tinyletter.com/hptn">
+
+
+
+
 	                     <div class="email-group">
                             <label for="email" class="sr-only"> Email </label>
 	                        <input type="email" id="email" name="email" value="" placeholder=" email@example.com ">
 	                        <button class="button" type="submit"> Subscribe </button>
-	                    </div> 
-	                    
-	                    
-	                
+	                    </div>
+
+
+
 	                 <div class="privacy-policy">
 	                    <p> <a href="http://tinyletter.com/site/legal/privacy/">Privacy Policy</a> </p>
+				<p> Powered by <a href="http://tinyletter.com">Tinyletter</a> </p>
 	                </div>
                 </form>
             </div>
         </div>
     </body>
 </html>
-
